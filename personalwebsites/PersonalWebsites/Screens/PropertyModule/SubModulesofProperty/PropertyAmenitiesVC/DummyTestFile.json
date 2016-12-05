@@ -1,0 +1,45 @@
+[
+
+	{
+    "amenityCategory": "HOTEL",
+    "amenities":
+		[
+         "The Imperial",
+         "The Leela Palace",
+         "The Oberoi",
+         "Le Meridien",
+         "Hyatt Regency Delhi",
+         "Eros Hotel"
+		]
+	},
+
+	{
+		"amenityCategory": "Amenity Category 02",
+		"amenities":
+		[
+			"Amenity0202",
+			"Amenity0203",
+			"Amenity0204",
+			"Amenity0205"
+		]
+	},
+
+	{
+		"amenityCategory": "Amenity Category 03",
+		"amenities":
+		[
+			"Amenity0301",
+			"Amenity0302",
+			"Amenity0305"
+		]
+	},
+
+	{
+		"amenityCategory": "Amenity Category 04",
+		"amenities": 
+		[
+ 
+		]
+	}
+
+]

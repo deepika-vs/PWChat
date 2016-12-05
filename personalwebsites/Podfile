@@ -1,0 +1,22 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '8.0'
+# Uncomment this line if you're using Swift
+# use_frameworks!
+
+pod 'MFSideMenu'
+pod 'GoogleAnalytics'
+pod 'Crashlytics'
+pod 'Fabric'
+pod 'IQKeyboardManager'
+pod 'MXSegmentedPager'
+
+pod 'Firebase/Storage'
+pod 'Firebase/Auth'
+pod 'Firebase/Database'
+pod 'Firebase/RemoteConfig'
+
+source 'https://github.com/CocoaPods/Specs.git'
+target 'PersonalWebsites' do
+  pod 'GoogleMaps'
+  pod 'GooglePlaces'
+end

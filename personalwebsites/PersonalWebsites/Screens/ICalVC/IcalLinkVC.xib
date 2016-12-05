@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="kaushan_script_regular.ttf">
+            <string>KaushanScript-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IcalLinkVC">
+            <connections>
+                <outlet property="icalAddView" destination="Cgz-L7-BRm" id="Doy-DB-o3Q"/>
+                <outlet property="icalLinkTableVIew" destination="Y08-m9-56q" id="VAf-nR-bkR"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Y08-m9-56q">
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <inset key="scrollIndicatorInsets" minX="0.0" minY="-10" maxX="0.0" maxY="0.0"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cgz-L7-BRm">
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a new property Ical link from here" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ld-Od-6J1">
+                            <fontDescription key="fontDescription" name="KaushanScript-Regular" family="Kaushan Script" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="4ld-Od-6J1" secondAttribute="bottom" constant="26" id="BkA-Ng-fFq"/>
+                        <constraint firstAttribute="trailing" secondItem="4ld-Od-6J1" secondAttribute="trailing" id="J8r-UE-7wr"/>
+                        <constraint firstItem="4ld-Od-6J1" firstAttribute="top" secondItem="Cgz-L7-BRm" secondAttribute="top" constant="26" id="Jut-uY-sOe"/>
+                        <constraint firstAttribute="height" constant="92" id="Rki-wm-aqj"/>
+                        <constraint firstItem="4ld-Od-6J1" firstAttribute="leading" secondItem="Cgz-L7-BRm" secondAttribute="leading" id="Tjf-Jr-OgS"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Y08-m9-56q" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="5" id="591-Rt-KiK"/>
+                <constraint firstItem="Cgz-L7-BRm" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="CBR-mJ-wCP"/>
+                <constraint firstAttribute="bottom" secondItem="Y08-m9-56q" secondAttribute="bottom" id="Gao-7h-8eE"/>
+                <constraint firstItem="Y08-m9-56q" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="W8g-jn-EzL"/>
+                <constraint firstAttribute="trailing" secondItem="Y08-m9-56q" secondAttribute="trailing" id="pXC-zx-Sth"/>
+                <constraint firstAttribute="trailing" secondItem="Cgz-L7-BRm" secondAttribute="trailing" id="q6h-z4-m0a"/>
+                <constraint firstItem="Cgz-L7-BRm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="rec-P0-2X5"/>
+            </constraints>
+            <point key="canvasLocation" x="32.5" y="52.5"/>
+        </view>
+    </objects>
+</document>

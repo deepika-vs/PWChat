@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PropertyGalleryCell" id="gTV-IL-0wX" customClass="PropertyGalleryCell">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="250"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="300" height="250"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c0w-Za-nU0">
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TestImage.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Brf-Rt-Ba2">
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8pb-Lz-I0a">
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Write Caption" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="aOD-bW-PXm" customClass="PWTextField">
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="13"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EWh-l0-WNc">
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="NfO-bP-aqx"/>
+                                        </constraints>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="deleteImageBtnPressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="o6l-Ji-S74"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="1Lm-NR-p5u"/>
+                                    <constraint firstItem="aOD-bW-PXm" firstAttribute="top" secondItem="8pb-Lz-I0a" secondAttribute="top" id="33k-h8-2It"/>
+                                    <constraint firstAttribute="trailing" secondItem="EWh-l0-WNc" secondAttribute="trailing" id="3Iu-yw-OTz"/>
+                                    <constraint firstItem="aOD-bW-PXm" firstAttribute="leading" secondItem="8pb-Lz-I0a" secondAttribute="leading" id="8uc-wV-v2k"/>
+                                    <constraint firstAttribute="bottom" secondItem="EWh-l0-WNc" secondAttribute="bottom" constant="2.5" id="JfD-4M-CvQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="aOD-bW-PXm" secondAttribute="bottom" id="jwQ-F2-9RW"/>
+                                    <constraint firstItem="EWh-l0-WNc" firstAttribute="top" secondItem="8pb-Lz-I0a" secondAttribute="top" constant="2.5" id="qf2-CZ-Ayh"/>
+                                    <constraint firstItem="EWh-l0-WNc" firstAttribute="leading" secondItem="aOD-bW-PXm" secondAttribute="trailing" constant="-10" id="udc-hi-m9Q"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8pb-Lz-I0a" firstAttribute="top" secondItem="Brf-Rt-Ba2" secondAttribute="bottom" id="3B5-KM-ZBM"/>
+                            <constraint firstAttribute="bottom" secondItem="8pb-Lz-I0a" secondAttribute="bottom" id="8rS-vk-9PN"/>
+                            <constraint firstItem="Brf-Rt-Ba2" firstAttribute="leading" secondItem="c0w-Za-nU0" secondAttribute="leading" id="EL3-Zv-C4k"/>
+                            <constraint firstItem="Brf-Rt-Ba2" firstAttribute="top" secondItem="c0w-Za-nU0" secondAttribute="top" id="HUO-vp-eq3"/>
+                            <constraint firstAttribute="trailing" secondItem="Brf-Rt-Ba2" secondAttribute="trailing" id="Tjp-2o-aKw"/>
+                            <constraint firstAttribute="trailing" secondItem="8pb-Lz-I0a" secondAttribute="trailing" id="aTM-1M-eBI"/>
+                            <constraint firstItem="8pb-Lz-I0a" firstAttribute="leading" secondItem="c0w-Za-nU0" secondAttribute="leading" id="kfc-6c-jZS"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="c0w-Za-nU0" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="F4L-W2-s17"/>
+                <constraint firstAttribute="bottom" secondItem="c0w-Za-nU0" secondAttribute="bottom" id="Jcu-cN-0zv"/>
+                <constraint firstAttribute="trailing" secondItem="c0w-Za-nU0" secondAttribute="trailing" id="OqT-5B-BfB"/>
+                <constraint firstItem="c0w-Za-nU0" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Oxl-tE-JJv"/>
+            </constraints>
+            <size key="customSize" width="294" height="241"/>
+            <connections>
+                <outlet property="captionTextField" destination="aOD-bW-PXm" id="gxY-qW-RHs"/>
+                <outlet property="cellImgView" destination="Brf-Rt-Ba2" id="TcO-Pn-usN"/>
+                <outlet property="deleteBtn" destination="EWh-l0-WNc" id="x0f-Si-lKd"/>
+            </connections>
+            <point key="canvasLocation" x="18" y="-56"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="TestImage.jpg" width="3504" height="2336"/>
+    </resources>
+</document>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AmenityCell" rowHeight="47" id="KGk-i7-Jjw" customClass="AmenityCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="78"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="77"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view tag="676" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r9i-zP-swm">
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HsC-Oe-9GD">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOTEL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="4dl-YN-e8O">
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="218" id="9P6-OO-GDg"/>
+                                            <constraint firstAttribute="height" constant="25" id="fAv-j3-7j5"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                                        <color key="textColor" red="0.42352941176470588" green="0.34509803921568627" blue="0.42352941176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" tag="20511" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cla-jt-gud">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="fBA-Qq-485"/>
+                                            <constraint firstAttribute="height" constant="25" id="h2L-TZ-3cU"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="userPressedDelCategoryBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="v0s-Xa-wo1"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6nM-gq-GKn"/>
+                                    <constraint firstItem="4dl-YN-e8O" firstAttribute="top" secondItem="HsC-Oe-9GD" secondAttribute="top" constant="2" id="EHq-bB-YmY"/>
+                                    <constraint firstItem="Cla-jt-gud" firstAttribute="top" secondItem="HsC-Oe-9GD" secondAttribute="top" constant="2" id="PhD-PX-Bf7"/>
+                                    <constraint firstAttribute="trailing" secondItem="Cla-jt-gud" secondAttribute="trailing" constant="-5" id="aMW-5b-Hfi"/>
+                                    <constraint firstItem="4dl-YN-e8O" firstAttribute="leading" secondItem="HsC-Oe-9GD" secondAttribute="leading" constant="8" id="nYL-SL-Omx"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mPI-IB-fON">
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="AGU-8g-UzJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="HsC-Oe-9GD" secondAttribute="trailing" constant="7" id="7Al-dh-XSY"/>
+                            <constraint firstItem="mPI-IB-fON" firstAttribute="top" secondItem="HsC-Oe-9GD" secondAttribute="bottom" constant="-6" id="AIt-YR-yV7"/>
+                            <constraint firstItem="mPI-IB-fON" firstAttribute="leading" secondItem="r9i-zP-swm" secondAttribute="leading" constant="3" id="Db1-Cs-QyS"/>
+                            <constraint firstItem="HsC-Oe-9GD" firstAttribute="leading" secondItem="r9i-zP-swm" secondAttribute="leading" constant="3" id="V3i-rU-kbg"/>
+                            <constraint firstAttribute="bottom" secondItem="mPI-IB-fON" secondAttribute="bottom" constant="7" id="VRJ-um-Z1z"/>
+                            <constraint firstItem="HsC-Oe-9GD" firstAttribute="top" secondItem="r9i-zP-swm" secondAttribute="top" id="aC8-o9-m6c"/>
+                            <constraint firstAttribute="trailing" secondItem="mPI-IB-fON" secondAttribute="trailing" constant="4" id="jj2-Jm-cbT"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="r9i-zP-swm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-5" id="9Uz-df-Vix"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="r9i-zP-swm" secondAttribute="bottom" id="jEo-w9-DPm"/>
+                    <constraint firstItem="r9i-zP-swm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="rAo-ut-uln"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="r9i-zP-swm" secondAttribute="trailing" id="x4K-Sm-WwJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="amenitiesView" destination="mPI-IB-fON" id="LMF-Lt-Lnf"/>
+                <outlet property="amenityCategoryLbl" destination="4dl-YN-e8O" id="Dke-fp-T9C"/>
+                <outlet property="contentsView" destination="r9i-zP-swm" id="VPS-OT-88o"/>
+                <outlet property="deleteCateBtn" destination="Cla-jt-gud" id="gzY-bg-Wt0"/>
+                <outlet property="rowHeightConstraint" destination="AGU-8g-UzJ" id="P3d-D6-v23"/>
+            </connections>
+            <point key="canvasLocation" x="-103" y="26"/>
+        </tableViewCell>
+    </objects>
+</document>

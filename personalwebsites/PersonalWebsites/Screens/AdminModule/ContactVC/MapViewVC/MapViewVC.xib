@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MapViewVC">
+            <connections>
+                <outlet property="didUserSelectedLocation" destination="WKN-S3-lER" id="5e5-8n-NrM"/>
+                <outlet property="mGMapView" destination="76h-m2-Znq" id="ZBH-aR-wgt"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="76h-m2-Znq" customClass="GMSMapView"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WKN-S3-lER" customClass="PWButton">
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="250" id="1rE-SE-Sg1"/>
+                        <constraint firstAttribute="height" constant="40" id="mbW-Y3-uHA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                    <state key="normal" title="Submit">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="didUserSelectedLocation:" destination="-1" eventType="touchUpInside" id="Bn0-v8-qv8"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="76h-m2-Znq" secondAttribute="trailing" id="25O-Ji-05H"/>
+                <constraint firstAttribute="bottom" secondItem="WKN-S3-lER" secondAttribute="bottom" constant="10" id="6zu-3g-fuj"/>
+                <constraint firstItem="76h-m2-Znq" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Iy0-es-SvR"/>
+                <constraint firstAttribute="bottom" secondItem="76h-m2-Znq" secondAttribute="bottom" id="Q2V-MD-Rcw"/>
+                <constraint firstItem="76h-m2-Znq" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="eU1-8h-BAK"/>
+                <constraint firstItem="WKN-S3-lER" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="nKZ-mm-uRD"/>
+                <constraint firstItem="76h-m2-Znq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="nXb-5r-0Jb"/>
+                <constraint firstItem="76h-m2-Znq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="w12-KU-yFK"/>
+            </constraints>
+            <point key="canvasLocation" x="35.5" y="54.5"/>
+        </view>
+    </objects>
+</document>

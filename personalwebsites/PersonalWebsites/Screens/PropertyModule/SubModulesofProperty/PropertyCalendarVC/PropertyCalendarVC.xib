@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PropertyCalendarVC">
+            <connections>
+                <outlet property="calContentView" destination="1TU-2R-Cyo" id="YzY-3H-kJ2"/>
+                <outlet property="checkSlotBtn" destination="kih-7V-Kd1" id="iw8-lC-JjU"/>
+                <outlet property="mTableView" destination="wDS-aw-Wxb" id="W8Q-pv-EyR"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1TU-2R-Cyo">
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="wDS-aw-Wxb">
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </tableView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y1Q-9K-pqi">
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CURRENT DATE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0gH-kw-iZW">
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="102" id="GYq-Wh-Hne"/>
+                                        <constraint firstAttribute="height" constant="21" id="Ily-Ob-Dxd"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="11"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="crJ-VR-ytT">
+                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="30" id="Wbb-N2-hBb"/>
+                                        <constraint firstAttribute="height" constant="16" id="udK-9e-ipA"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="13"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BOOKED DATE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7kY-fS-I6R">
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="21" id="T8L-jb-SUi"/>
+                                        <constraint firstAttribute="width" constant="100" id="hc8-jP-6N1"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="11"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BXe-3g-AWI">
+                                    <color key="backgroundColor" red="0.074509803921568626" green="0.40392156862745099" blue="0.9137254901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="16" id="Lzs-gN-OEq"/>
+                                        <constraint firstAttribute="width" constant="30" id="Uno-yS-rhX"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="13"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="BXe-3g-AWI" secondAttribute="trailing" constant="11" id="Cig-FF-3w2"/>
+                                <constraint firstItem="crJ-VR-ytT" firstAttribute="top" secondItem="Y1Q-9K-pqi" secondAttribute="top" constant="7" id="Dke-py-qTp"/>
+                                <constraint firstItem="0gH-kw-iZW" firstAttribute="leading" secondItem="Y1Q-9K-pqi" secondAttribute="leading" constant="5" id="E7g-GG-jWy"/>
+                                <constraint firstItem="7kY-fS-I6R" firstAttribute="top" secondItem="Y1Q-9K-pqi" secondAttribute="top" constant="5" id="GqL-xi-z8Z"/>
+                                <constraint firstItem="crJ-VR-ytT" firstAttribute="leading" secondItem="0gH-kw-iZW" secondAttribute="trailing" constant="1" id="J80-Ev-Hrf"/>
+                                <constraint firstAttribute="bottom" secondItem="crJ-VR-ytT" secondAttribute="bottom" constant="7" id="SAn-FL-hdw"/>
+                                <constraint firstItem="BXe-3g-AWI" firstAttribute="leading" secondItem="7kY-fS-I6R" secondAttribute="trailing" constant="-2" id="ZqJ-oX-m7K"/>
+                                <constraint firstItem="BXe-3g-AWI" firstAttribute="top" secondItem="Y1Q-9K-pqi" secondAttribute="top" constant="7" id="eXy-Ol-Mb8"/>
+                                <constraint firstItem="0gH-kw-iZW" firstAttribute="top" secondItem="Y1Q-9K-pqi" secondAttribute="top" constant="5" id="gHp-MP-wVh"/>
+                                <constraint firstAttribute="height" constant="30" id="rmU-MY-cyf"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Y1Q-9K-pqi" secondAttribute="bottom" constant="-2" id="2qU-Tc-pgY"/>
+                        <constraint firstItem="Y1Q-9K-pqi" firstAttribute="leading" secondItem="1TU-2R-Cyo" secondAttribute="leading" constant="2" id="WOF-8y-j9m"/>
+                        <constraint firstItem="wDS-aw-Wxb" firstAttribute="leading" secondItem="1TU-2R-Cyo" secondAttribute="leading" id="Y2C-QT-KsB"/>
+                        <constraint firstItem="wDS-aw-Wxb" firstAttribute="top" secondItem="1TU-2R-Cyo" secondAttribute="top" constant="4" id="oNg-va-V6u"/>
+                        <constraint firstItem="Y1Q-9K-pqi" firstAttribute="top" secondItem="wDS-aw-Wxb" secondAttribute="bottom" constant="3" id="sVI-qX-raM"/>
+                        <constraint firstAttribute="trailing" secondItem="wDS-aw-Wxb" secondAttribute="trailing" id="tXc-8R-dtX"/>
+                        <constraint firstAttribute="trailing" secondItem="Y1Q-9K-pqi" secondAttribute="trailing" constant="2" id="uV1-W3-hQf"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kih-7V-Kd1" customClass="PWButton">
+                    <color key="backgroundColor" red="0.074509803921568626" green="0.40392156862745099" blue="0.9137254901960784" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="aks-vl-W9W"/>
+                        <constraint firstAttribute="width" constant="240" id="x9f-D8-MhG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
+                    <state key="normal" title="Check Slot Details">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="userPressedCheckSlotButton:" destination="-1" eventType="touchUpInside" id="fe9-de-M4j"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="1TU-2R-Cyo" secondAttribute="trailing" constant="8" id="COL-eU-o85"/>
+                <constraint firstItem="kih-7V-Kd1" firstAttribute="centerX" secondItem="1TU-2R-Cyo" secondAttribute="centerX" id="LHX-2t-2ag"/>
+                <constraint firstItem="1TU-2R-Cyo" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="4" id="V60-Wi-puW"/>
+                <constraint firstItem="kih-7V-Kd1" firstAttribute="top" secondItem="1TU-2R-Cyo" secondAttribute="bottom" constant="33" id="gak-3Z-AFK"/>
+                <constraint firstAttribute="trailing" secondItem="kih-7V-Kd1" secondAttribute="trailing" constant="40" id="i2N-aR-pIw"/>
+                <constraint firstAttribute="bottom" secondItem="kih-7V-Kd1" secondAttribute="bottom" constant="43" id="mpz-WV-53O"/>
+                <constraint firstItem="1TU-2R-Cyo" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="psa-iI-dG6"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

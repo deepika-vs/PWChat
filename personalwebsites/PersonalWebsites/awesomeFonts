@@ -1,0 +1,56 @@
+home:
+
+     fa-home
+
+favourites:
+
+fa-heart (selected)
+fa-heart-o  (unselected)
+
+
+
+fa-star (selected)
+fa-star-o  (unselected)
+
+Add to avourites:
+
+fa-plus-square 
+fa-plus-square-o
+fa-plus-circle
+
+
+fa-check-square
+fa-check-square-o
+
+
+side menu button:
+
+fa-list   
+fa-navicon 
+
+arrows:
+
+fa-long-arrow-left
+fa-chevron-left
+
+fa-chevron-circle-down
+fa-chevron-down
+fa-caret-down
+fa-chevron-circle-up
+fa-chevron-up
+fa-caret-up
+fa-chevron-circle-right
+
+fa-clock-o
+fa-cloud
+fa-comment
+fa-comment-o
+fa-commenting-o
+
+fa-bell-o
+fa-bell
+fa-info
+fa-info-circle
+fa-line-chart         (For standings)
+fa-trophy (for turnaments)
+fa-wrench (for settings)

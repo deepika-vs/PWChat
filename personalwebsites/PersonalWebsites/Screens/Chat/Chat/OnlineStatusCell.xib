@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="OnlineStatusCell" rowHeight="28" id="KGk-i7-Jjw" customClass="OnlineStatusCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="28"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="27"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onlineStatusImage.png" translatesAutoresizingMaskIntoConstraints="NO" id="hiO-Bd-2Xh">
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="1On-fD-2Kt"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Destination Expert is online" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2BE-40-8BR">
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="13" id="aqv-ng-nDL"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="11"/>
+                        <color key="textColor" red="0.51764705882352935" green="0.52549019607843139" blue="0.53333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="2BE-40-8BR" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="9vg-UC-JUf"/>
+                    <constraint firstAttribute="topMargin" secondItem="2BE-40-8BR" secondAttribute="top" constant="1" id="IWD-5q-hJm"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="2BE-40-8BR" secondAttribute="bottom" constant="-1" id="NZE-xa-ckN"/>
+                    <constraint firstItem="hiO-Bd-2Xh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-36" id="PrD-qS-rnz"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="2BE-40-8BR" secondAttribute="trailing" constant="78" id="Qss-2i-HAs"/>
+                    <constraint firstItem="hiO-Bd-2Xh" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="SuW-dt-fae"/>
+                    <constraint firstItem="2BE-40-8BR" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="TqE-Az-JIJ"/>
+                    <constraint firstItem="hiO-Bd-2Xh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-4" id="WH8-VK-9Ry"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="hiO-Bd-2Xh" secondAttribute="trailing" constant="-37" id="mYw-Qf-QAl"/>
+                    <constraint firstItem="2BE-40-8BR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="84" id="mlu-DI-WaW"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="hiO-Bd-2Xh" secondAttribute="bottom" constant="-5" id="v8U-fD-y7n"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="Qss-2i-HAs"/>
+                        <exclude reference="mlu-DI-WaW"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="statusLabel" destination="2BE-40-8BR" id="Or5-xc-Ksd"/>
+            </connections>
+            <point key="canvasLocation" x="236" y="234"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="onlineStatusImage.png" width="2880" height="128"/>
+    </resources>
+</document>

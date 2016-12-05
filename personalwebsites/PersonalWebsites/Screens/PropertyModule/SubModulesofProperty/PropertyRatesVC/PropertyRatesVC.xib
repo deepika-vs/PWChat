@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="kaushan_script_regular.ttf">
+            <string>KaushanScript-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PropertyRatesVC">
+            <connections>
+                <outlet property="addRateMsgView" destination="dSo-Tp-CbB" id="gRM-2T-1kR"/>
+                <outlet property="mTableView" destination="TRt-5q-dzk" id="jxP-qH-efG"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TRt-5q-dzk">
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <inset key="separatorInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Two-HF-h8d"/>
+                        <outlet property="delegate" destination="-1" id="Ghm-BS-5aj"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dSo-Tp-CbB">
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add a new property rate from here" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Skd-8L-MSx">
+                            <fontDescription key="fontDescription" name="KaushanScript-Regular" family="Kaushan Script" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Skd-8L-MSx" secondAttribute="trailing" constant="5" id="7XW-eh-Pk4"/>
+                        <constraint firstItem="Skd-8L-MSx" firstAttribute="leading" secondItem="dSo-Tp-CbB" secondAttribute="leading" constant="5" id="Gnq-KC-0cY"/>
+                        <constraint firstItem="Skd-8L-MSx" firstAttribute="top" secondItem="dSo-Tp-CbB" secondAttribute="top" constant="30" id="Wu3-fu-Tb6"/>
+                        <constraint firstAttribute="height" constant="100" id="bgU-Yn-D5K"/>
+                        <constraint firstAttribute="width" constant="320" id="dTi-y5-if8"/>
+                        <constraint firstAttribute="bottom" secondItem="Skd-8L-MSx" secondAttribute="bottom" constant="30" id="yQs-V2-HYt"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="TRt-5q-dzk" secondAttribute="trailing" id="4Gn-QC-Kcq"/>
+                <constraint firstItem="dSo-Tp-CbB" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="FVj-Gi-5gT"/>
+                <constraint firstItem="TRt-5q-dzk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="aAJ-Gd-hFS"/>
+                <constraint firstAttribute="bottom" secondItem="TRt-5q-dzk" secondAttribute="bottom" id="eO1-iy-RCT"/>
+                <constraint firstItem="dSo-Tp-CbB" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="sWL-u4-XzG"/>
+                <constraint firstItem="TRt-5q-dzk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="vKu-Oc-yWY"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>
